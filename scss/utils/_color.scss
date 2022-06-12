@@ -1,0 +1,21 @@
+@use "variable" as *;
+
+// scss-docs-start theme-colors-map
+
+$colors: (
+    "primary": $primary,
+    "neutral-100": $neutral-100,
+    "neutral-70": $neutral-70,
+    "neutral-50": $neutral-50,
+    "neutral-30": $neutral-30,
+    "neutral-20": $neutral-20,
+    "neutral-10": $neutral-10,
+    "neutral-0": $neutral-0,
+) !default;
+
+$colors-Shade: (
+    "primary-100": $primary,
+) !default;
+
+$colorScheme: map-merge($colors, $colors-Shade);
+

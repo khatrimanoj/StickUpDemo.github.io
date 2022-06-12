@@ -1,0 +1,38 @@
+@use "../utils/" as *;
+.form-input {
+    @include toRem(height, 40);
+    border: 1px solid var(--color-neutral-20);
+    @include toRem(border-radius, 2);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 0 15px;
+    color: var(--color-neutral-100);
+    &::placeholder {
+        color: var(--color-neutral-50);
+    }
+}
+.search-bar {
+    position: relative;
+    padding: 40px 0;
+    .form-input {
+        width: 100%;
+        border-color: rgba(255,255,255,0.20);
+        background-color: rgba(255,255,255,0.10);
+        color: var(--color-neutral-0);
+        @include toRem(padding-right, 40);
+        &::placeholder {
+            color: rgba(255,255,255,0.50);
+        }
+    }
+    .btn-search {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        @include flexbox();
+        outline: none;
+        box-shadow: none;
+        @include align-items($value: center);
+    }
+}

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0" />
+
+  <meta http-equiv=X-UA-Compatible content="IE=edge">
+	<meta name=theme-color content="#008779" />
+
+  <title>StickUp</title>
+
+	<meta property="og:image" content="https://khatrimanoj.github.io/digitaldesign/images/banner_1.jpg">
+	<meta name="twitter:card" content=summary_large_image>
+
+  <link rel="icon" href="assets/images/favicon.png" type="image/gif" sizes="16x16">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- preload css -->
+  <link rel="preload" onload="this.rel = 'stylesheet'" as="style" href="assets/css/bootstrap.css">
+  <link rel="preload" onload="this.rel = 'stylesheet'" as="style" href="assets/css/main.css">
+
+  <noscript>
+    <link rel="stylesheet" href="assets/css/main.css">
+  </noscript>
+</head>
+
+<body>
+
+  <main>
+    <aside>
+      <div class="logo">
+        <a href="/">
+          <img src="images/logo.svg" alt="stickup logo" />
+        </a>
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search for options" class="form-input sidebar-search"/>
+        <button type="button" class="btn btn-search"><img src="images/search-icon.svg" alt="search icon" /></button>
+      </div>
+      <div class="sidebar">
+        <ul>
+          <li>
+            <a href="#" class="active">
+              <img src="images/home-icon.svg" alt="game icon" />
+              <span>Games</span>
+            </a>
+          </li>
+          <li class="divider"></li>
+          <li>
+            <a href="#">
+              <img src="images/user-icon.svg" alt="user icon" />
+              <span>Players</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/album-icon.svg" alt="staff icon" />
+              <span>Staff</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/users-icon.svg" alt="teams icon" />
+              <span>Teams</span>
+            </a>
+          </li>
+          <li class="divider"></li>
+          <li>
+            <a href="#">
+              <img src="images/rink-icon.svg" alt="rink icon" />
+              <span>Rinks</span>
+            </a>
+          </li>
+          <li class="divider"></li>
+          <li>
+            <a href="#">
+              <img src="images/coins-icon.svg" alt="payment icon" />
+              <span>Payments</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/tag-icon.svg" alt="coupons & promos icon" />
+              <span>Coupons & Promos</span>
+            </a>
+          </li>
+          <li class="divider"></li>
+          <li>
+            <a href="#">
+              <img src="images/bar-chart-icon.svg" alt="statistics icon" />
+              <span>Statistics</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/bar-chart-icon.svg" alt="setting icon" />
+              <span>Settings</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <div class="content__wrapper">
+      <nav class="navbar">
+        <ul class="navbar-left">
+          <li>
+            <a href="#" class="active">All</a>
+          </li>
+          <li>
+            <a href="#">Pickup</a>
+          </li>
+          <li>
+            <a href="#">leagues</a>
+          </li>
+          <li>
+            <a href="#">tournaments</a>
+          </li>
+          <li>
+            <div class="dropdown">
+              <a class="dropdown-toggle more" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                more
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <ul class="navbar-right">
+          <li>
+            <button type="button" class="notification">
+              <span class="notification-count">4</span>
+              <img src="images/bell-icon.svg" alt="bell icon" />
+            </button>
+          </li>
+          <li>
+            <div class="dropdown">
+              <button type="button" class="dropdown-toggle" id="dropdownUser" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="images/profile.png" alt="user avatar" />
+              </button>
+              <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">Setting</a>
+                <a href="#" class="dropdown-item">Logout</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="main__wrapper">
+        <div class="sec-title-btn">
+          <div class="sec-title">All games</div>
+          <div class="d-flex">
+            <button type="button" class="d-flex icon-text">
+              <img src="images/plus-icon.svg" alt="plus icon" />
+              <span class="ms-2">New game</span>
+            </button>
+            <button type="button" class="ms-3">
+              <img src="images/menu-dots.svg" alt="vertical dots icon" />
+            </button>
+          </div>
+        </div>
+        <div class="search-filter mt-4">
+          <div class="search">
+            <input type="text" class="form-input" placeholder="Search all games" >
+            <button type="button" class="btn-search"><img src="images/search-icon-black.svg" alt="search icon"/></button>
+          </div>
+          <div class="filter">
+            <div class="dropdown">
+              <button type="button" class="dropdown-toggle no-arrow">
+                <img src="images/filter-icon.svg" alt="filter icon" class="me-3"/>
+                <span>Filters</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="game__cards">
+          <div class="game__cards--row">
+            <div class="date">Today, 24th April 2021</div>
+            <div class="row-items row">
+              <div class="item col-lg-3 col-md-4">
+                <div class="card dashed-border">
+                  <button type="button" class="icon-text">
+                    <img src="images/plus-icon.svg" alt="plus icon" />
+                    <span>New game</span>
+                  </button>
+                </div>
+              </div>
+              <div class="item col-lg-3 col-md-4">
+                <div class="card">
+                  <div class="card-header gradient-1">
+                    <div class="icon-title">
+                      <img src="images/reg.svg" alt="game icon" class="icon" />
+                      <div class="title">The Arena</div>
+                    </div>
+                    <button type="button">
+                      <img src="images/menu-dots.svg" alt="vertical dots icon" class="img-white"/>
+                    </button>
+                  </div>
+                  <div class="card-body">
+                    <div class="team-time">
+                      <div class="team">
+                        <img src="images/users-icon.svg" alt="users icon" />
+                        <span>Team A</span>
+                      </div>
+                      <div class="time">04:00 PM</div>
+                      <div class="team">
+                        <img src="images/users-icon.svg" alt="users icon" />
+                        <span>Team A</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item col-lg-3 col-md-4">
+                <div class="card">
+                  <div class="card-header gradient-2">
+                    <div class="icon-title">
+                      <img src="images/reg.svg" alt="game icon" class="icon" />
+                      <div class="title">The Arena</div>
+                    </div>
+                    <button type="button">
+                      <img src="images/menu-dots.svg" alt="vertical dots icon" class="img-white"/>
+                    </button>
+                  </div>
+                  <div class="card-body">
+                    <div class="team-time">
+                      <div class="team">
+                        <img src="images/canada-logo.png" alt="users icon" />
+                        <span>Canad... Canad... Canad...</span>
+                      </div>
+                      <div class="time">04:00 PM</div>
+                      <div class="team">
+                        <img src="images/users-icon.svg" alt="users icon" />
+                        <span>Boston B... Boston B...</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item col-lg-3 col-md-4">
+                <div class="card">
+                  <div class="card-header gradient-3">
+                    <div class="icon-title">
+                      <img src="images/reg.svg" alt="game icon" class="icon" />
+                      <div class="title">The Arena</div>
+                    </div>
+                    <button type="button">
+                      <img src="images/menu-dots.svg" alt="vertical dots icon" class="img-white"/>
+                    </button>
+                  </div>
+                  <div class="card-body">
+                    <div class="team-time">
+                      <div class="team">
+                        <img src="images/canada-logo.png" alt="users icon" />
+                        <span>Canad... Canad... Canad...</span>
+                      </div>
+                      <div class="time">04:00 PM</div>
+                      <div class="team">
+                        <img src="images/boston-logo.png" alt="users icon" />
+                        <span>Boston B... Boston B...</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="game__cards--row">
+            <div class="date">Yesterday, 23rd April 2021</div>
+            <div class="row-items row">
+              <div class="item col-lg-3 col-md-4">
+                <div class="card">
+                  <div class="card-header gradient-1">
+                    <div class="icon-title">
+                      <img src="images/reg.svg" alt="game icon" class="icon" />
+                      <div class="title">The Arena</div>
+                    </div>
+                    <button type="button">
+                      <img src="images/menu-dots.svg" alt="vertical dots icon" class="img-white"/>
+                    </button>
+                  </div>
+                  <div class="card-body">
+                    <div class="team-time">
+                      <div class="team">
+                        <img src="images/users-icon.svg" alt="users icon" />
+                        <span>Team A</span>
+                      </div>
+                      <div class="time">04:00 PM</div>
+                      <div class="team">
+                        <img src="images/users-icon.svg" alt="users icon" />
+                        <span>Team A</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item col-lg-3 col-md-4">
+                <div class="card">
+                  <div class="card-header gradient-2">
+                    <div class="icon-title">
+                      <img src="images/reg.svg" alt="game icon" class="icon" />
+                      <div class="title">The Arena</div>
+                    </div>
+                    <button type="button">
+                      <img src="images/menu-dots.svg" alt="vertical dots icon" class="img-white"/>
+                    </button>
+                  </div>
+                  <div class="card-body">
+                    <div class="team-time">
+                      <div class="team">
+                        <img src="images/canada-logo.png" alt="users icon" />
+                        <span>Canad... Canad...</span>
+                      </div>
+                      <div class="time">04:00 PM</div>
+                      <div class="team">
+                        <img src="images/boston-logo.png" alt="users icon" />
+                        <span>Boston B... Boston B...</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="game__cards--row">
+            <div class="date">Yesterday, 23rd April 2021</div>
+            <div class="row-items row">
+              <div class="item col-lg-3 col-md-4">
+                <div class="card">
+                  <div class="card-header gradient-3">
+                    <div class="icon-title">
+                      <img src="images/reg.svg" alt="game icon" class="icon" />
+                      <div class="title">The Arena</div>
+                    </div>
+                    <button type="button">
+                      <img src="images/menu-dots.svg" alt="vertical dots icon" class="img-white"/>
+                    </button>
+                  </div>
+                  <div class="card-body">
+                    <div class="team-time">
+                      <div class="team">
+                        <img src="images/users-icon.svg" alt="users icon" />
+                        <span>Team A</span>
+                      </div>
+                      <div class="time">04:00 PM</div>
+                      <div class="team">
+                        <img src="images/users-icon.svg" alt="users icon" />
+                        <span>Team A</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script defer src="assets/js/jquery.js"></script>
+  <script defer src="assets/js/bootstrap.bundle.js"></script>
+  <script defer src="assets/js/main.js"></script>
+</body>
+
+</html>
